@@ -23,7 +23,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
     <div [class]="color">
       <ng-template [ngIf]="!_isRange" [ngIfElse]="rangeBox">
         <div class="days-box">
-          <ng-template ngFor let-day [ngForOf]="month.days || []">
+          <ng-template ngFor let-day [ngForOf]="month.days" [ngForTrackBy]="trackByTime">
             <div class="days">
               <ng-container *ngIf="day">
                 <button
@@ -48,7 +48,7 @@ export const MONTH_VALUE_ACCESSOR: any = {
 
       <ng-template #rangeBox>
         <div class="days-box">
-          <ng-template ngFor let-day [ngForOf]="month.days || []">
+          <ng-template ngFor let-day [ngForOf]="month.days" [ngForTrackBy]="trackByTime">
             <div
               class="days"
               [class.startSelection]="isStartSelection(day)"
