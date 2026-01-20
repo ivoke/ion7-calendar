@@ -5,7 +5,7 @@ node_modules/
 platforms/
 plugins/
 resources/
-dist/
+# dist/ # temporarily disabled for unpackaged dev branch
 */www/
 package-lock.json
 yarn.lock

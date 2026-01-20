@@ -1,6 +1,6 @@
 {
   "name": "ion7-calendar",
-  "version": "3.6.29",
+  "version": "3.6.30",
   "description": "A date picker component for ionic 7 ",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -20,7 +20,7 @@
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "packagr": "ng-packagr -p package.json",
     "prepublishOnly": "npm run build",
-    "prepare": "npm run build"
+    "donot:prepare": "npm run build"
   },
   "repository": {
     "type": "git",
